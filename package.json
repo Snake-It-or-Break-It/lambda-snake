@@ -1,0 +1,30 @@
+{
+  "name": "lambda-snake",
+  "version": "1.0.0",
+  "description": "Express.js application hosted on AWS Lambda",
+  "main": "app/public/index.js",
+  "scripts": {
+    "start": "node .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Snake-It-or-Break-It/lambda-snake.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Snake-It-or-Break-It/lambda-snake/issues"
+  },
+  "homepage": "https://github.com/Snake-It-or-Break-It/lambda-snake#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.2",
+    "@types/node": "^13.7.0",
+    "tslint": "^6.0.0",
+    "typescript": "^3.7.5"
+  }
+}
