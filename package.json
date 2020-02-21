@@ -2,29 +2,34 @@
   "name": "lambda-snake",
   "version": "1.0.0",
   "description": "Express.js application hosted on AWS Lambda",
-  "main": "app/public/index.js",
+  "main": "snake/api/helloworld.js",
   "scripts": {
-    "start": "node .",
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Snake-It-or-Break-It/lambda-snake.git"
+    "tsc": "tsc -p tsconfig.json",
+    "lint": "tsc -p tsconfig.json && eslint ./snake/*/*.{js,ts} --fix",
+    "deploy": "serverless deploy",
+    "test": "serverless invoke local -f helloWorld",
+    "run": "serverless inoke -f helloWorld"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/Snake-It-or-Break-It/lambda-snake/issues"
-  },
-  "homepage": "https://github.com/Snake-It-or-Break-It/lambda-snake#readme",
   "dependencies": {
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "serverless": "^1.64.0"
   },
   "devDependencies": {
+    "@types/aws-lambda": "^8.10.43",
     "@types/express": "^4.17.2",
-    "@types/node": "^13.7.0",
-    "tslint": "^6.0.0",
-    "typescript": "^3.7.5"
+    "@types/node": "^13.7.4",
+    "@types/serverless": "^1.18.4",
+    "@typescript-eslint/eslint-plugin": "^2.20.0",
+    "@typescript-eslint/parser": "^2.20.0",
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb-base": "^14.0.0",
+    "eslint-config-prettier": "^6.10.0",
+    "eslint-plugin-import": "^2.20.1",
+    "eslint-plugin-prettier": "^3.1.2",
+    "prettier": "^1.19.1",
+    "typescript": "^3.8.2"
   }
 }
