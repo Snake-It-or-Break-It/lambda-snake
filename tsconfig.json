@@ -1,10 +1,10 @@
 {
     "compilerOptions": {
-        "outDir": "./app/public/",
+        "outDir": "./snake/api/",
         "allowJs": true,
         "target": "es6"
     },
     "include": [
-        "app/src/**/*"
-    ]
+        "snake/src/**/*", "snake/api/helloworld.js"
+    ],
 }
