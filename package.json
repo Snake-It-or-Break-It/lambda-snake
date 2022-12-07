@@ -15,7 +15,7 @@
   "license": "ISC",
   "dependencies": {
     "express": "^4.17.1",
-    "serverless": "^1.64.0"
+    "serverless": "^3.25.1"
   },
   "devDependencies": {
     "@types/aws-lambda": "^8.10.43",
